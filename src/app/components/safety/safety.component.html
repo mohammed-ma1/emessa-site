@@ -1,0 +1,58 @@
+<section class="section surface safety" id="safety">
+  <div class="container">
+    <div class="section-head" [appScrollAnimate]="0.2">
+      <div class="kicker">{{ 'safety.kicker' | translate }}</div>
+      <h2>{{ 'safety.title' | translate }}</h2>
+      <p>{{ 'safety.lead' | translate }}</p>
+    </div>
+
+    <div class="safety__grid" appStaggerChildren="0.08" staggerSelector="[data-stagger-child]">
+      <article class="safetyCard" data-stagger-child>
+        <div class="safetyCard__k">{{ 'safety.cards.standards.k' | translate }}</div>
+        <h3 class="safetyCard__t">{{ 'safety.cards.standards.t' | translate }}</h3>
+        <p class="safetyCard__p">{{ 'safety.cards.standards.p' | translate }}</p>
+      </article>
+
+      <article class="safetyCard" data-stagger-child>
+        <div class="safetyCard__k">{{ 'safety.cards.qaqc.k' | translate }}</div>
+        <h3 class="safetyCard__t">{{ 'safety.cards.qaqc.t' | translate }}</h3>
+        <p class="safetyCard__p">{{ 'safety.cards.qaqc.p' | translate }}</p>
+      </article>
+
+      <article class="safetyCard" data-stagger-child>
+        <div class="safetyCard__k">{{ 'safety.cards.training.k' | translate }}</div>
+        <h3 class="safetyCard__t">{{ 'safety.cards.training.t' | translate }}</h3>
+        <p class="safetyCard__p">{{ 'safety.cards.training.p' | translate }}</p>
+      </article>
+
+      <article class="safetyCard" data-stagger-child>
+        <div class="safetyCard__k">{{ 'safety.cards.sustainability.k' | translate }}</div>
+        <h3 class="safetyCard__t">{{ 'safety.cards.sustainability.t' | translate }}</h3>
+        <p class="safetyCard__p">{{ 'safety.cards.sustainability.p' | translate }}</p>
+      </article>
+    </div>
+
+    <div class="iso" [appScrollAnimate]="0.2">
+      <h3 class="iso__title">{{ 'safety.iso.title' | translate }}</h3>
+
+      <div class="iso__grid" appStaggerChildren="0.06" staggerSelector="[data-stagger-child]">
+        <article class="isoBadge" data-stagger-child>
+          <div class="isoBadge__t">{{ 'safety.iso.items.14001.t' | translate }}</div>
+          <div class="isoBadge__p">{{ 'safety.iso.items.14001.p' | translate }}</div>
+          <div class="isoBadge__n">{{ 'safety.iso.items.14001.n' | translate }}</div>
+        </article>
+        <article class="isoBadge" data-stagger-child>
+          <div class="isoBadge__t">{{ 'safety.iso.items.45001.t' | translate }}</div>
+          <div class="isoBadge__p">{{ 'safety.iso.items.45001.p' | translate }}</div>
+          <div class="isoBadge__n">{{ 'safety.iso.items.45001.n' | translate }}</div>
+        </article>
+        <article class="isoBadge" data-stagger-child>
+          <div class="isoBadge__t">{{ 'safety.iso.items.9001.t' | translate }}</div>
+          <div class="isoBadge__p">{{ 'safety.iso.items.9001.p' | translate }}</div>
+          <div class="isoBadge__n">{{ 'safety.iso.items.9001.n' | translate }}</div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,51 @@
+<header class="header" [class.header--scrolled]="scrolled()">
+  <a class="skip-link" href="#main">{{ 'header.skipToContent' | translate }}</a>
+
+  <div class="container header__inner">
+    <a class="brand" href="#" (click)="onNavClick()">
+      <img class="brand__mark" src="assets/brand/emessa-logo.svg" [alt]="logoAlt" />
+      <span class="brand__text">
+        <span class="brand__name">{{ 'brand.companyName' | translate }}</span>
+        <span class="brand__promise">{{ 'brand.promise' | translate }}</span>
+      </span>
+    </a>
+
+    <nav class="nav" [class.nav--open]="mobileOpen()" [attr.aria-label]="'header.primaryNav' | translate">
+      <a class="nav__link" href="#about" (click)="onNavClick()">{{ 'common.navigation.about' | translate }}</a>
+      <a class="nav__link" href="#services" (click)="onNavClick()">{{ 'common.navigation.services' | translate }}</a>
+      <a class="nav__link" href="#profile" (click)="onNavClick()">{{ 'common.navigation.profile' | translate }}</a>
+      <a class="nav__link" href="#projects" (click)="onNavClick()">{{ 'common.navigation.projects' | translate }}</a>
+      <a class="nav__link" href="#safety" (click)="onNavClick()">{{ 'common.navigation.safety' | translate }}</a>
+      <a class="nav__link" href="#contact" (click)="onNavClick()">{{ 'common.navigation.contact' | translate }}</a>
+
+      <button
+        type="button"
+        class="lang"
+        (click)="toggleLanguage()"
+        [attr.aria-label]="'header.switchLanguage' | translate"
+      >
+        <span class="lang__pill" [class.lang__pill--active]="currentLang() === 'en'">EN</span>
+        <span class="lang__sep" aria-hidden="true">|</span>
+        <span class="lang__pill" [class.lang__pill--active]="currentLang() === 'ar'">AR</span>
+      </button>
+
+      <a class="btn btn-primary nav__cta" href="#profile" (click)="onNavClick()" appMagneticButton>
+        {{ 'common.buttons.checkProfile' | translate }}
+      </a>
+    </nav>
+
+    <button
+      type="button"
+      class="burger"
+      (click)="toggleMobile()"
+      [class.burger--open]="mobileOpen()"
+      [attr.aria-label]="'header.toggleMenu' | translate"
+      [attr.aria-expanded]="mobileOpen()"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+

@@ -1,0 +1,258 @@
+{
+  "common": {
+    "navigation": {
+      "about": "About",
+      "services": "Services",
+      "profile": "Profile",
+      "projects": "Projects",
+      "safety": "Safety",
+      "contact": "Contact"
+    },
+    "buttons": {
+      "checkProfile": "Check our Profile",
+      "contactUs": "Contact Us",
+      "viewProjects": "View Projects",
+      "downloadPdf": "Download PDF",
+      "openPdf": "Open Profile"
+    },
+    "language": {
+      "english": "English",
+      "arabic": "Arabic"
+    }
+  },
+  "brand": {
+    "companyName": "Eastern Modern Specialists Artists Company (EMESSA)",
+    "promise": "Committed to providing excellent service and quality results."
+  },
+  "header": {
+    "skipToContent": "Skip to content",
+    "toggleMenu": "Toggle menu",
+    "switchLanguage": "Switch language",
+    "primaryNav": "Primary navigation",
+    "logoAlt": "EMESSA logo"
+  },
+  "hero": {
+    "kicker": "From Sketch → Living Landscape",
+    "headline": "From sketch to living landscape.",
+    "subheadline": "Design-led outdoor contracting that moves from concept clarity to beautiful, buildable outcomes—delivered with care, safety, and schedule discipline.",
+    "valueTitle": "Our mission",
+    "chips": {
+      "onTime": "On time, on budget",
+      "quality": "Quality-first execution",
+      "riyadh": "Riyadh, Saudi Arabia"
+    }
+  },
+  "about": {
+    "kicker": "Who we are",
+    "title": "Eastern Modern Specialists Artists Company (EMESSA)",
+    "lead": "Headquartered in Jeddah, EMESSA is a Saudi landscape & construction company growing as part of Emessa International Group. We design and build sustainable outdoor environments—beneficial for people and the environment—by reading each site’s history, current state, and context.",
+    "cards": {
+      "clarity": {
+        "k": "Clarity",
+        "t": "Sketch-to-site alignment",
+        "p": "We translate ideas into clear plans, materials, and execution details—reducing surprises and rework."
+      },
+      "delivery": {
+        "k": "Delivery",
+        "t": "Reliable scheduling",
+        "p": "We plan and coordinate with a contractor mindset—prioritizing handover quality and predictable timelines."
+      },
+      "quality": {
+        "k": "Quality",
+        "t": "Premium finishing",
+        "p": "From hardscape to planting and outdoor details, we execute with clean edges, strong durability, and care."
+      }
+    },
+    "stats": {
+      "yearEstablished": "Year established",
+      "skilledEmployees": "Skilled employees",
+      "completedProjects": "Completed projects"
+    }
+  },
+  "services": {
+    "kicker": "Services",
+    "title": "Outdoor services, end-to-end",
+    "lead": "A flexible service mix designed around outdoor environments—planning, building, and finishing to a premium standard.",
+    "learnMore": "Learn more",
+    "seeWork": "See work",
+    "items": {
+      "constructionManagement": {
+        "t": "Construction management",
+        "p": "Planning, coordination, and execution control to keep scope, quality, and timelines predictable."
+      },
+      "landscapeDesign": {
+        "t": "Landscape design",
+        "p": "Site-aware designs that balance beauty, usability, and maintainability—optimized for the local environment."
+      },
+      "specialProjects": {
+        "t": "Special projects",
+        "p": "Custom outdoor elements and bespoke scopes—from feature builds to unique installations."
+      },
+      "irrigation": {
+        "t": "Landscaping & irrigation",
+        "p": "Irrigation planning and implementation that supports healthy greenery with efficient water use."
+      },
+      "outdoorFurniture": {
+        "t": "Outdoor furniture & planter boxes",
+        "p": "Durable outdoor pieces and planters designed for weather, wear, and visual cohesion."
+      },
+      "fencesGates": {
+        "t": "Steel fences, gates & screens",
+        "p": "Functional perimeter solutions with clean detailing—privacy, security, and visual rhythm."
+      }
+    },
+    "timeline": {
+      "title": "Sketch → Living Landscape",
+      "sub": "A process designed for readability, quality, and calm execution—each step draws itself as you scroll.",
+      "steps": {
+        "sketch": { "k": "Step 01", "t": "Sketch", "p": "Define intent, constraints, and the experience you want outdoors." },
+        "plan": { "k": "Step 02", "t": "Plan", "p": "Align design, materials, and scope into a build-ready plan." },
+        "build": { "k": "Step 03", "t": "Build", "p": "Execute with consistent site standards, supervision, and quality checks." },
+        "care": { "k": "Step 04", "t": "Care", "p": "Finalize details, ensure performance, and support long-term maintenance." }
+      }
+    },
+    "scope": {
+      "title": "Scope of work (in motion)",
+      "sub": "A snapshot of real delivery—from irrigation and planting to hardscape details. This ribbon scrolls continuously to bring the page to life."
+    }
+  },
+  "profile": {
+    "kicker": "Company profile",
+    "title": "Profile & portfolio",
+    "lead": "Download our company profile (PDF) to review services, ISO certifications, organization chart, and selected major projects.",
+    "download": {
+      "title": "Company Profile (PDF)",
+      "p": "A detailed overview of EMESSA—services, standards, organizational structure, and project portfolio.",
+      "hint": "Place your PDF at assets/docs/emessa-company-profile.pdf."
+    },
+    "highlights": {
+      "title": "Highlights",
+      "p": "What you can expect when working with EMESSA.",
+      "items": {
+        "1": "Design-led planning with execution clarity",
+        "2": "Schedule discipline and clean handover",
+        "3": "Quality controls and site-ready standards",
+        "4": "Responsive communication throughout delivery"
+      }
+    },
+    "values": {
+      "title": "Our values",
+      "p": "The principles that guide how we work—on site, in design, and with partners.",
+      "items": {
+        "excellence": "Professional excellence",
+        "integrity": "Integrity",
+        "people": "People",
+        "partnership": "Partnership",
+        "innovation": "Innovation",
+        "culture": "Culture"
+      }
+    }
+  },
+  "projects": {
+    "kicker": "Portfolio",
+    "title": "Projects",
+    "lead": "A curated selection of outdoor work—from landscape buildouts to details and special scopes.",
+    "filterAria": "Filter projects",
+    "openHint": "Click to open",
+    "openAria": "Open project",
+    "lightbox": {
+      "aria": "Project lightbox",
+      "close": "Close",
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "filters": {
+      "all": "All",
+      "landscaping": "Landscaping",
+      "irrigation": "Irrigation",
+      "outdoor": "Outdoor features",
+      "fences": "Fences & screens",
+      "special": "Special projects"
+    },
+    "items": {
+      "p1": { "t": "KAFD Parcel 5.03", "p": "Full scope of hardscape, softscape, site furniture, and water features.", "loc": "Riyadh" },
+      "p2": { "t": "Dar Al Uloom University", "p": "Hardscape, site furniture, cladding, and carved stone bench works.", "loc": "Riyadh" },
+      "p3": { "t": "La Valle Mall", "p": "Site furniture, water feature, and cladding—premium outdoor finishing.", "loc": "Riyadh" },
+      "p4": { "t": "Misk School Campus Project", "p": "Landscape + boundary walls, steel fences/gates/shades, timber works, and GRC/GRP/GRG scopes.", "loc": "Riyadh – Irqah" },
+      "p5": { "t": "Al Hasaa Bridge", "p": "Full scope of hardscape, softscape, site furniture, and cladding.", "loc": "Al Hasaa" },
+      "p6": { "t": "Alquia Mall (Hardscape)", "p": "Hardscape and site furniture package with custom benches and detailing.", "loc": "Riyadh" },
+      "p7": { "t": "Boundary walls – split face", "p": "Split-face textured block boundary wall scope with clean detailing (Misk School Campus).", "loc": "Riyadh – Irqah" },
+      "p8": { "t": "Retaining walls – split face", "p": "Split-face textured block retaining walls with transitions, corners, and finishes (Misk School Campus).", "loc": "Riyadh – Irqah" }
+    }
+  },
+  "safety": {
+    "kicker": "Safety & quality",
+    "title": "Safety, compliance, and QA/QC",
+    "lead": "We build with a contractor’s discipline—clear standards, documented checks, and a safety culture that protects teams and outcomes.",
+    "cards": {
+      "standards": { "k": "Standards", "t": "Compliance-ready execution", "p": "Work methods aligned to site requirements, approvals, and best-practice controls." },
+      "qaqc": { "k": "QA/QC", "t": "Documented quality checkpoints", "p": "Structured inspections and punch lists to keep finishing consistent and measurable." },
+      "training": { "k": "HSE", "t": "Safety-first culture", "p": "Toolbox talks, supervision, and incident prevention built into the daily routine." },
+      "sustainability": { "k": "Sustainability", "t": "Built for long-term performance", "p": "Material choices and installation methods that support durability and maintainability." }
+    },
+    "iso": {
+      "title": "ISO certifications",
+      "items": {
+        "14001": { "t": "ISO 14001:2015", "p": "Environmental Management System", "n": "I-ESC202109018" },
+        "45001": { "t": "ISO 45001:2018", "p": "Occupational Health & Safety Management System", "n": "I-OSC202109015" },
+        "9001": { "t": "ISO 9001:2015", "p": "Quality Management System", "n": "I-QSC202109048" }
+      }
+    }
+  },
+  "clients": {
+    "kicker": "Clients & partners",
+    "title": "Trusted delivery",
+    "lead": "We support clients and partners with clear coordination, dependable execution, and premium results.",
+    "trust": {
+      "quality": { "k": "Quality", "v": "Finishing standards you can see and measure." },
+      "schedule": { "k": "Schedule", "v": "Clear planning to protect timelines and handover confidence." },
+      "hse": { "k": "HSE", "v": "Safety culture that protects teams, sites, and outcomes." }
+    },
+    "hint": "Add client/partner logos under assets and we’ll swap these placeholders for a polished logo wall."
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Let’s build something outdoors",
+    "lead": "Share a few details and we’ll respond with the next best step.",
+    "info": {
+      "title": "Contact details",
+      "address": { "k": "Address", "v": "Head Office: Jeddah – Salama District\\nP.O. Box: 7854-3280\\nCR: 4030377902" },
+      "phoneOffice": { "k": "Office Tel", "v": "+966126050593" },
+      "phoneConstruction": { "k": "Construction Team", "v": "+966503302266" },
+      "emailConstruction": { "k": "Construction Email", "v": "a.barakat@emessa-sa.com" },
+      "phoneSales": { "k": "Sales Manager", "v": "+966500560670" },
+      "emailSales": { "k": "Sales Email", "v": "m.mnlla@emessa-sa.com" },
+      "email": { "k": "Email", "v": "info@emessa-sa.com" },
+      "hours": { "k": "Office hours", "v": "Saturday to Thursday\\n8:00 am to 5:00 pm" }
+    },
+    "map": { "aria": "Map", "title": "Google Maps location", "open": "Open in Google Maps" },
+    "email": {
+      "to": "info@emessa-sa.com",
+      "subject": "New message from {{name}}",
+      "body": "New website message\\n\\nName: {{name}}\\nEmail: {{email}}\\nPhone: {{phone}}\\n\\nMessage:\\n{{message}}\\n"
+    },
+    "whatsapp": {
+      "number": "966503302266",
+      "message": "Hello EMESSA, I’d like to get in touch.\\nName: {{name}}\\nPhone: {{phone}}\\n\\nMessage:\\n{{message}}"
+    },
+    "form": {
+      "title": "Send a message",
+      "fields": { "name": "Name", "email": "Email", "phone": "Phone", "message": "Message" },
+      "submit": "Prepare message",
+      "sending": "Preparing…",
+      "sla": "Your email/WhatsApp will open with a pre-filled message.",
+      "actions": { "email": "Open email", "whatsapp": "WhatsApp" },
+      "success": { "t": "Message ready", "p": "Choose email or WhatsApp to send your message." }
+    }
+  },
+  "footer": {
+    "desc": "Eastern Modern Specialists Artists Company (EMESSA).",
+    "quickLinks": "Quick links",
+    "social": "Social links",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "copy": "© Eastern Modern Specialists Artists Company (EMESSA). All rights reserved."
+  },
+  "valueStatement": "It is our mission to creatively solve our clients’ outdoor landscaping challenges and meet their needs by providing the means to turn their ideas into a beautiful reality.\\nWe achieve this mission by building faith in our business through our impeccable reputation—knowing that every job is a reference, no matter how big or small.\\nWe aim to build long-term relationships with our clients by caring for their residential or commercial gardens and exceeding expectations year after year."
+}
+

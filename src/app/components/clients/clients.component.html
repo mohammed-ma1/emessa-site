@@ -1,0 +1,38 @@
+<section class="section clients" id="clients">
+  <div class="container">
+    <div class="section-head" [appScrollAnimate]="0.2">
+      <div class="kicker">{{ 'clients.kicker' | translate }}</div>
+      <h2>{{ 'clients.title' | translate }}</h2>
+      <p>{{ 'clients.lead' | translate }}</p>
+    </div>
+
+    <div class="trust" appStaggerChildren="0.08" staggerSelector="[data-stagger-child]">
+      <div class="trust__item" data-stagger-child>
+        <div class="trust__k">{{ 'clients.trust.quality.k' | translate }}</div>
+        <div class="trust__v">{{ 'clients.trust.quality.v' | translate }}</div>
+      </div>
+      <div class="trust__item" data-stagger-child>
+        <div class="trust__k">{{ 'clients.trust.schedule.k' | translate }}</div>
+        <div class="trust__v">{{ 'clients.trust.schedule.v' | translate }}</div>
+      </div>
+      <div class="trust__item" data-stagger-child>
+        <div class="trust__k">{{ 'clients.trust.hse.k' | translate }}</div>
+        <div class="trust__v">{{ 'clients.trust.hse.v' | translate }}</div>
+      </div>
+    </div>
+
+    <div class="wall" [appScrollAnimate]="0.2" appStaggerChildren="0.05" staggerSelector="[data-stagger-child]">
+      <div class="logo" data-stagger-child>Client Logo</div>
+      <div class="logo" data-stagger-child>Partner Logo</div>
+      <div class="logo" data-stagger-child>Client Logo</div>
+      <div class="logo" data-stagger-child>Partner Logo</div>
+      <div class="logo" data-stagger-child>Client Logo</div>
+      <div class="logo" data-stagger-child>Partner Logo</div>
+      <div class="logo logo--wide" data-stagger-child>Featured Partner</div>
+      <div class="logo" data-stagger-child>Client Logo</div>
+    </div>
+
+    <p class="hint" [appScrollAnimate]="0.2">{{ 'clients.hint' | translate }}</p>
+  </div>
+</section>
+

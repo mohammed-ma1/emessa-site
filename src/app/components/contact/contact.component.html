@@ -1,0 +1,124 @@
+<section class="section surface contact" id="contact">
+  <div class="container">
+    <div class="section-head" [appScrollAnimate]="0.2">
+      <div class="kicker">{{ 'contact.kicker' | translate }}</div>
+      <h2>{{ 'contact.title' | translate }}</h2>
+      <p>{{ 'contact.lead' | translate }}</p>
+    </div>
+
+    <div class="contact__grid" appStaggerChildren="0.08" staggerSelector="[data-stagger-child]">
+      <div class="card panel" data-stagger-child>
+        <h3 class="panel__t">{{ 'contact.info.title' | translate }}</h3>
+
+        <div class="info">
+          <div class="info__item">
+            <div class="info__k">{{ 'contact.info.address.k' | translate }}</div>
+            <div class="info__v" style="white-space: pre-line;">{{ 'contact.info.address.v' | translate }}</div>
+          </div>
+          <div class="info__item">
+            <div class="info__k">{{ 'contact.info.phoneOffice.k' | translate }}</div>
+            <a class="info__v info__link" [href]="'tel:' + ('contact.info.phoneOffice.v' | translate)">
+              {{ 'contact.info.phoneOffice.v' | translate }}
+            </a>
+          </div>
+          <div class="info__item">
+            <div class="info__k">{{ 'contact.info.email.k' | translate }}</div>
+            <a class="info__v info__link" [href]="'mailto:' + ('contact.email.to' | translate)">
+              {{ 'contact.email.to' | translate }}
+            </a>
+          </div>
+          <div class="info__item">
+            <div class="info__k">{{ 'contact.info.phoneConstruction.k' | translate }}</div>
+            <a class="info__v info__link" [href]="'tel:' + ('contact.info.phoneConstruction.v' | translate)">
+              {{ 'contact.info.phoneConstruction.v' | translate }}
+            </a>
+            <a class="info__v info__link" [href]="'mailto:' + ('contact.info.emailConstruction.v' | translate)">
+              {{ 'contact.info.emailConstruction.v' | translate }}
+            </a>
+          </div>
+          <div class="info__item">
+            <div class="info__k">{{ 'contact.info.phoneSales.k' | translate }}</div>
+            <a class="info__v info__link" [href]="'tel:' + ('contact.info.phoneSales.v' | translate)">
+              {{ 'contact.info.phoneSales.v' | translate }}
+            </a>
+            <a class="info__v info__link" [href]="'mailto:' + ('contact.info.emailSales.v' | translate)">
+              {{ 'contact.info.emailSales.v' | translate }}
+            </a>
+          </div>
+          <div class="info__item">
+            <div class="info__k">{{ 'contact.info.hours.k' | translate }}</div>
+            <div class="info__v" style="white-space: pre-line;">{{ 'contact.info.hours.v' | translate }}</div>
+          </div>
+        </div>
+
+        <div class="map" [attr.aria-label]="'contact.map.aria' | translate">
+          <iframe
+            class="map__frame"
+            [attr.title]="'contact.map.title' | translate"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+            src="https://www.google.com/maps?q=Salama%2C%20Jeddah%2C%20Saudi%20Arabia&z=12&output=embed"
+          ></iframe>
+          <a class="map__link" href="https://www.google.com/maps?q=Salama%2C%20Jeddah%2C%20Saudi%20Arabia" target="_blank" rel="noopener">
+            {{ 'contact.map.open' | translate }}
+          </a>
+        </div>
+      </div>
+
+      <div class="card panel" data-stagger-child>
+        <h3 class="panel__t">{{ 'contact.form.title' | translate }}</h3>
+
+        @if (submitted()) {
+          <div class="success" role="status" aria-live="polite">
+            <div class="success__icon" aria-hidden="true">✓</div>
+            <div class="success__t">{{ 'contact.form.success.t' | translate }}</div>
+            <div class="success__p">{{ 'contact.form.success.p' | translate }}</div>
+            <div class="success__actions">
+              <a class="btn btn-primary" [href]="emailHref()" target="_blank" rel="noopener">
+                {{ 'contact.form.actions.email' | translate }}
+              </a>
+              <a class="btn btn-secondary" [href]="whatsappHref()" target="_blank" rel="noopener">
+                {{ 'contact.form.actions.whatsapp' | translate }}
+              </a>
+            </div>
+          </div>
+        } @else {
+          <form class="form" (ngSubmit)="submit()" #f="ngForm">
+            <label class="field">
+              <span class="field__k">{{ 'contact.form.fields.name' | translate }} *</span>
+              <input name="name" [(ngModel)]="form.name" required autocomplete="name" />
+            </label>
+
+            <label class="field">
+              <span class="field__k">{{ 'contact.form.fields.email' | translate }} *</span>
+              <input name="email" [(ngModel)]="form.email" required type="email" autocomplete="email" />
+            </label>
+
+            <label class="field">
+              <span class="field__k">{{ 'contact.form.fields.phone' | translate }}</span>
+              <input name="phone" [(ngModel)]="form.phone" type="tel" autocomplete="tel" />
+            </label>
+
+            <label class="field">
+              <span class="field__k">{{ 'contact.form.fields.message' | translate }} *</span>
+              <textarea name="message" [(ngModel)]="form.message" required rows="5"></textarea>
+            </label>
+
+            <div class="actions">
+              <button class="btn btn-primary" type="submit" [disabled]="loading()">
+                {{ loading() ? ('contact.form.sending' | translate) : ('contact.form.submit' | translate) }}
+              </button>
+              <a class="btn btn-secondary" [href]="whatsappHref()" target="_blank" rel="noopener">
+                {{ 'contact.form.actions.whatsapp' | translate }}
+              </a>
+            </div>
+
+            <div class="sla">{{ 'contact.form.sla' | translate }}</div>
+          </form>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+

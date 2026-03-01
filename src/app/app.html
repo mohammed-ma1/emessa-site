@@ -1,0 +1,56 @@
+<app-header />
+
+<main id="main">
+  <app-hero />
+  <app-about />
+  <app-services />
+
+  @defer (on viewport) {
+    <app-profile />
+  } @placeholder {
+    <section class="section" id="profile" aria-label="Profile placeholder">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Profile</div>
+          <h2>Loading…</h2>
+          <p>Preparing company profile content.</p>
+        </div>
+      </div>
+    </section>
+  }
+
+  @defer (on viewport) {
+    <app-projects />
+  } @placeholder {
+    <section class="section" id="projects" aria-label="Projects placeholder">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Projects</div>
+          <h2>Loading…</h2>
+          <p>Preparing portfolio content.</p>
+        </div>
+      </div>
+    </section>
+  }
+
+  <app-safety />
+
+  @defer (on viewport) {
+    <app-clients />
+  } @placeholder {
+    <section class="section" id="clients" aria-label="Clients placeholder">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Clients</div>
+          <h2>Loading…</h2>
+          <p>Preparing client and partner content.</p>
+        </div>
+      </div>
+    </section>
+  }
+
+  <app-contact />
+</main>
+
+<app-footer />
+

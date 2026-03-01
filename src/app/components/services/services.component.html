@@ -1,0 +1,155 @@
+<section class="section surface services" id="services">
+  <div class="container">
+    <div class="section-head" [appScrollAnimate]="0.2">
+      <div class="kicker">{{ 'services.kicker' | translate }}</div>
+      <h2>{{ 'services.title' | translate }}</h2>
+      <p>{{ 'services.lead' | translate }}</p>
+    </div>
+
+    <div class="services__cards" appStaggerChildren="0.08" staggerSelector="[data-stagger-child]">
+      <article class="serviceCard" data-stagger-child>
+        <div class="serviceCard__top">
+          <span class="serviceCard__num">01</span>
+          <h3 class="serviceCard__t">{{ 'services.items.constructionManagement.t' | translate }}</h3>
+        </div>
+        <p class="serviceCard__p">{{ 'services.items.constructionManagement.p' | translate }}</p>
+        <a class="link-underline" href="#contact">{{ 'services.learnMore' | translate }}</a>
+      </article>
+
+      <article class="serviceCard" data-stagger-child>
+        <div class="serviceCard__top">
+          <span class="serviceCard__num">02</span>
+          <h3 class="serviceCard__t">{{ 'services.items.landscapeDesign.t' | translate }}</h3>
+        </div>
+        <p class="serviceCard__p">{{ 'services.items.landscapeDesign.p' | translate }}</p>
+        <a class="link-underline" href="#projects">{{ 'services.seeWork' | translate }}</a>
+      </article>
+
+      <article class="serviceCard" data-stagger-child>
+        <div class="serviceCard__top">
+          <span class="serviceCard__num">03</span>
+          <h3 class="serviceCard__t">{{ 'services.items.specialProjects.t' | translate }}</h3>
+        </div>
+        <p class="serviceCard__p">{{ 'services.items.specialProjects.p' | translate }}</p>
+        <a class="link-underline" href="#contact">{{ 'services.learnMore' | translate }}</a>
+      </article>
+
+      <article class="serviceCard" data-stagger-child>
+        <div class="serviceCard__top">
+          <span class="serviceCard__num">04</span>
+          <h3 class="serviceCard__t">{{ 'services.items.irrigation.t' | translate }}</h3>
+        </div>
+        <p class="serviceCard__p">{{ 'services.items.irrigation.p' | translate }}</p>
+        <a class="link-underline" href="#contact">{{ 'services.learnMore' | translate }}</a>
+      </article>
+
+      <article class="serviceCard" data-stagger-child>
+        <div class="serviceCard__top">
+          <span class="serviceCard__num">05</span>
+          <h3 class="serviceCard__t">{{ 'services.items.outdoorFurniture.t' | translate }}</h3>
+        </div>
+        <p class="serviceCard__p">{{ 'services.items.outdoorFurniture.p' | translate }}</p>
+        <a class="link-underline" href="#projects">{{ 'services.seeWork' | translate }}</a>
+      </article>
+
+      <article class="serviceCard" data-stagger-child>
+        <div class="serviceCard__top">
+          <span class="serviceCard__num">06</span>
+          <h3 class="serviceCard__t">{{ 'services.items.fencesGates.t' | translate }}</h3>
+        </div>
+        <p class="serviceCard__p">{{ 'services.items.fencesGates.p' | translate }}</p>
+        <a class="link-underline" href="#projects">{{ 'services.seeWork' | translate }}</a>
+      </article>
+    </div>
+
+    <div class="timeline" [appScrollAnimate]="0.2">
+      <div class="timeline__head">
+        <h3 class="timeline__title">{{ 'services.timeline.title' | translate }}</h3>
+        <p class="timeline__sub">{{ 'services.timeline.sub' | translate }}</p>
+      </div>
+
+      <ol class="timeline__steps" aria-label="Process timeline">
+        <li class="step">
+          <div class="step__icon" appDrawStroke [drawDuration]="0.9" [drawStagger]="0.02" [drawFill]="false">
+            <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 19 L19 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              <path d="M18.5 5.5 L23 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              <path d="M5 19 L5 23 L9 23" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="step__text">
+            <div class="step__k">{{ 'services.timeline.steps.sketch.k' | translate }}</div>
+            <div class="step__t">{{ 'services.timeline.steps.sketch.t' | translate }}</div>
+            <div class="step__p">{{ 'services.timeline.steps.sketch.p' | translate }}</div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step__icon" appDrawStroke [drawDuration]="0.9" [drawStagger]="0.02" [drawFill]="false">
+            <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 8 H22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              <path d="M6 14 H22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              <path d="M6 20 H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="step__text">
+            <div class="step__k">{{ 'services.timeline.steps.plan.k' | translate }}</div>
+            <div class="step__t">{{ 'services.timeline.steps.plan.t' | translate }}</div>
+            <div class="step__p">{{ 'services.timeline.steps.plan.p' | translate }}</div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step__icon" appDrawStroke [drawDuration]="0.9" [drawStagger]="0.02" [drawFill]="false">
+            <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 22 V12 L14 6 L22 12 V22" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+              <path d="M11 22 V16 H17 V22" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="step__text">
+            <div class="step__k">{{ 'services.timeline.steps.build.k' | translate }}</div>
+            <div class="step__t">{{ 'services.timeline.steps.build.t' | translate }}</div>
+            <div class="step__p">{{ 'services.timeline.steps.build.p' | translate }}</div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step__icon" appDrawStroke [drawDuration]="0.9" [drawStagger]="0.02" [drawFill]="false">
+            <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 24 C10 20, 9 16, 9 13 C9 9, 11 6, 14 5 C17 6, 19 9, 19 13 C19 16, 18 20, 14 24 Z" stroke="currentColor" stroke-width="1.8" />
+              <path d="M14 18 L14 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="step__text">
+            <div class="step__k">{{ 'services.timeline.steps.care.k' | translate }}</div>
+            <div class="step__t">{{ 'services.timeline.steps.care.t' | translate }}</div>
+            <div class="step__p">{{ 'services.timeline.steps.care.p' | translate }}</div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="scope" [appScrollAnimate]="0.2">
+      <div class="scope__head">
+        <h3 class="scope__title">{{ 'services.scope.title' | translate }}</h3>
+        <p class="scope__sub">{{ 'services.scope.sub' | translate }}</p>
+      </div>
+
+      <div class="scope__marquee" aria-hidden="true">
+        <div class="scope__track">
+          @for (src of scopeImages; track $index) {
+            <div class="scope__item">
+              <img class="scope__img" [src]="src" alt="" loading="lazy" decoding="async" />
+            </div>
+          }
+          @for (src of scopeImages; track $index) {
+            <div class="scope__item">
+              <img class="scope__img" [src]="src" alt="" loading="lazy" decoding="async" />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

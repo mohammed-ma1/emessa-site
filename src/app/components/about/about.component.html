@@ -1,0 +1,45 @@
+<section class="section about" id="about">
+  <div class="container">
+    <div class="section-head" [appScrollAnimate]="0.2">
+      <div class="kicker">{{ 'about.kicker' | translate }}</div>
+      <h2>{{ 'about.title' | translate }}</h2>
+      <p>{{ 'about.lead' | translate }}</p>
+    </div>
+
+    <div class="about__grid" appStaggerChildren="0.08" staggerSelector="[data-stagger-child]">
+      <article class="card aboutCard" data-stagger-child>
+        <div class="aboutCard__k">{{ 'about.cards.clarity.k' | translate }}</div>
+        <h3 class="aboutCard__t">{{ 'about.cards.clarity.t' | translate }}</h3>
+        <p class="aboutCard__p">{{ 'about.cards.clarity.p' | translate }}</p>
+      </article>
+
+      <article class="card aboutCard" data-stagger-child>
+        <div class="aboutCard__k">{{ 'about.cards.delivery.k' | translate }}</div>
+        <h3 class="aboutCard__t">{{ 'about.cards.delivery.t' | translate }}</h3>
+        <p class="aboutCard__p">{{ 'about.cards.delivery.p' | translate }}</p>
+      </article>
+
+      <article class="card aboutCard" data-stagger-child>
+        <div class="aboutCard__k">{{ 'about.cards.quality.k' | translate }}</div>
+        <h3 class="aboutCard__t">{{ 'about.cards.quality.t' | translate }}</h3>
+        <p class="aboutCard__p">{{ 'about.cards.quality.p' | translate }}</p>
+      </article>
+    </div>
+
+    <div class="stats" appStaggerChildren="0.08" staggerSelector="[data-stagger-child]">
+      <div class="stat" data-stagger-child>
+        <div class="stat__v">2012</div>
+        <div class="stat__k">{{ 'about.stats.yearEstablished' | translate }}</div>
+      </div>
+      <div class="stat" data-stagger-child>
+        <div class="stat__v">110</div>
+        <div class="stat__k">{{ 'about.stats.skilledEmployees' | translate }}</div>
+      </div>
+      <div class="stat" data-stagger-child>
+        <div class="stat__v">100+</div>
+        <div class="stat__k">{{ 'about.stats.completedProjects' | translate }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+

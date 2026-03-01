@@ -1,0 +1,31 @@
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <div class="footer__name">{{ 'brand.companyName' | translate }}</div>
+      <div class="footer__desc">{{ 'footer.desc' | translate }}</div>
+    </div>
+
+    <nav class="footer__links" [attr.aria-label]="'footer.quickLinks' | translate">
+      <a href="#about">{{ 'common.navigation.about' | translate }}</a>
+      <a href="#services">{{ 'common.navigation.services' | translate }}</a>
+      <a href="#profile">{{ 'common.navigation.profile' | translate }}</a>
+      <a href="#projects">{{ 'common.navigation.projects' | translate }}</a>
+      <a href="#safety">{{ 'common.navigation.safety' | translate }}</a>
+      <a href="#contact">{{ 'common.navigation.contact' | translate }}</a>
+    </nav>
+
+    <div class="footer__social" [attr.aria-label]="'footer.social' | translate">
+      <a class="btn btn-secondary" href="https://www.linkedin.com" target="_blank" rel="noopener" appMagneticButton>
+        {{ 'footer.linkedin' | translate }}
+      </a>
+      <a class="btn btn-secondary" href="https://www.instagram.com" target="_blank" rel="noopener" appMagneticButton>
+        {{ 'footer.instagram' | translate }}
+      </a>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <div class="footer__copy">{{ 'footer.copy' | translate }}</div>
+  </div>
+</footer>
+

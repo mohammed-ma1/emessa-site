@@ -1,0 +1,92 @@
+<section class="section projects" id="projects">
+  <div class="container">
+    <div class="section-head" [appScrollAnimate]="0.2">
+      <div class="kicker">{{ 'projects.kicker' | translate }}</div>
+      <h2>{{ 'projects.title' | translate }}</h2>
+      <p>{{ 'projects.lead' | translate }}</p>
+    </div>
+
+    <div class="filters" [appScrollAnimate]="0.2" [attr.aria-label]="'projects.filterAria' | translate">
+      @for (c of categories; track c.id) {
+        <button
+          type="button"
+          class="filter"
+          [class.filter--active]="selected() === c.id"
+          (click)="setCategory(c.id)"
+        >
+          {{ c.labelKey | translate }}
+        </button>
+      }
+    </div>
+
+    <div class="gallery" appStaggerChildren="0.05" staggerSelector="[data-stagger-child]">
+      @for (p of filtered(); track p.id) {
+        <article
+          class="tile"
+          data-stagger-child
+          role="button"
+          tabindex="0"
+          (click)="open(p.id)"
+          (keydown)="onTileKeydown($event, p.id)"
+          [attr.aria-label]="('projects.openAria' | translate) + ': ' + (p.titleKey | translate)"
+        >
+          <div class="tile__media">
+            <img [src]="p.image" [alt]="p.titleKey | translate" loading="lazy" />
+            <div class="tile__mediaOverlay" aria-hidden="true"></div>
+          </div>
+          <div class="tile__body">
+            <div class="tile__meta">
+              <span class="tile__year">{{ p.year }}</span>
+              <span class="tile__dot" aria-hidden="true"></span>
+              <span class="tile__loc">{{ p.locationKey | translate }}</span>
+            </div>
+            <h3 class="tile__t">{{ p.titleKey | translate }}</h3>
+            <p class="tile__p">{{ p.descriptionKey | translate }}</p>
+            <span class="tile__hint">{{ 'projects.openHint' | translate }}</span>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+
+  @if (active(); as a) {
+    <div class="lb" (click)="onBackdropClick($event)" role="presentation">
+      <div
+        class="lb__dialog"
+        role="dialog"
+        aria-modal="true"
+        [attr.aria-label]="'projects.lightbox.aria' | translate"
+        #dialog
+        tabindex="-1"
+      >
+        <button class="lb__close" type="button" (click)="close()" data-close [attr.aria-label]="'projects.lightbox.close' | translate">
+          ✕
+        </button>
+
+        <div class="lb__media">
+          <img class="lb__img" [src]="a.image" [alt]="a.titleKey | translate" />
+        </div>
+
+        <div class="lb__body">
+          <div class="lb__meta">
+            <span class="lb__year">{{ a.year }}</span>
+            <span class="lb__dot" aria-hidden="true"></span>
+            <span class="lb__loc">{{ a.locationKey | translate }}</span>
+          </div>
+          <div class="lb__title">{{ a.titleKey | translate }}</div>
+          <div class="lb__desc">{{ a.descriptionKey | translate }}</div>
+
+          <div class="lb__actions">
+            <button class="btn btn-secondary" type="button" (click)="prev()" [attr.aria-label]="'projects.lightbox.prev' | translate">
+              ← {{ 'projects.lightbox.prev' | translate }}
+            </button>
+            <button class="btn btn-secondary" type="button" (click)="next()" [attr.aria-label]="'projects.lightbox.next' | translate">
+              {{ 'projects.lightbox.next' | translate }} →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+</section>
+

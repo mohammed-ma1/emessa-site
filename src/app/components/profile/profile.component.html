@@ -1,0 +1,62 @@
+<section class="section profile" id="profile">
+  <div class="container">
+    <div class="section-head" [appScrollAnimate]="0.2">
+      <div class="kicker">{{ 'profile.kicker' | translate }}</div>
+      <h2>{{ 'profile.title' | translate }}</h2>
+      <p>{{ 'profile.lead' | translate }}</p>
+    </div>
+
+    <div class="profile__grid" appStaggerChildren="0.08" staggerSelector="[data-stagger-child]">
+      <article class="card profileCard profileCard--download" data-stagger-child>
+        <div class="profileCard__top">
+          <h3 class="profileCard__t">{{ 'profile.download.title' | translate }}</h3>
+          <p class="profileCard__p">{{ 'profile.download.p' | translate }}</p>
+        </div>
+
+        <div class="profileCard__actions">
+          <a class="btn btn-primary" [href]="profileHref" target="_blank" rel="noopener" appMagneticButton>
+            {{ 'common.buttons.checkProfile' | translate }}
+          </a>
+          <a class="btn btn-secondary" [href]="profileHref" download appMagneticButton>
+            {{ 'common.buttons.downloadPdf' | translate }}
+          </a>
+        </div>
+
+        <div class="profileCard__hint">
+          {{ 'profile.download.hint' | translate }}
+        </div>
+      </article>
+
+      <article class="card profileCard" data-stagger-child>
+        <div class="profileCard__top">
+          <h3 class="profileCard__t">{{ 'profile.highlights.title' | translate }}</h3>
+          <p class="profileCard__p">{{ 'profile.highlights.p' | translate }}</p>
+        </div>
+
+        <ul class="bullets" aria-label="Highlights">
+          <li class="bullet">{{ 'profile.highlights.items.1' | translate }}</li>
+          <li class="bullet">{{ 'profile.highlights.items.2' | translate }}</li>
+          <li class="bullet">{{ 'profile.highlights.items.3' | translate }}</li>
+          <li class="bullet">{{ 'profile.highlights.items.4' | translate }}</li>
+        </ul>
+      </article>
+
+      <article class="card profileCard profileCard--values" data-stagger-child>
+        <div class="profileCard__top">
+          <h3 class="profileCard__t">{{ 'profile.values.title' | translate }}</h3>
+          <p class="profileCard__p">{{ 'profile.values.p' | translate }}</p>
+        </div>
+
+        <ul class="bullets" aria-label="Values">
+          <li class="bullet">{{ 'profile.values.items.excellence' | translate }}</li>
+          <li class="bullet">{{ 'profile.values.items.integrity' | translate }}</li>
+          <li class="bullet">{{ 'profile.values.items.people' | translate }}</li>
+          <li class="bullet">{{ 'profile.values.items.partnership' | translate }}</li>
+          <li class="bullet">{{ 'profile.values.items.innovation' | translate }}</li>
+          <li class="bullet">{{ 'profile.values.items.culture' | translate }}</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+

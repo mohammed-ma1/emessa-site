@@ -1,0 +1,88 @@
+<section class="hero" aria-label="Hero">
+  <div class="container hero__grid">
+    <div class="hero__content">
+      <div class="kicker hero__kicker">{{ 'hero.kicker' | translate }}</div>
+
+      <h1 class="hero__headline" appSplitText="words" [splitText]="'hero.headline' | translate"></h1>
+
+      <p class="hero__subhead">
+        {{ 'hero.subheadline' | translate }}
+      </p>
+
+      <p class="hero__promise">
+        {{ 'brand.promise' | translate }}
+      </p>
+
+      <div class="hero__chips" aria-label="Trust chips">
+        <span class="chip hero__chip chip--accent">{{ 'hero.chips.onTime' | translate }}</span>
+        <span class="chip hero__chip">{{ 'hero.chips.quality' | translate }}</span>
+        <span class="chip hero__chip">{{ 'hero.chips.riyadh' | translate }}</span>
+      </div>
+
+      <div class="hero__cta">
+        <a class="btn btn-primary" href="#profile" appMagneticButton>{{ 'common.buttons.checkProfile' | translate }}</a>
+        <a class="btn btn-secondary" href="#projects" appMagneticButton>{{ 'common.buttons.viewProjects' | translate }}</a>
+      </div>
+
+      <div class="hero__value">
+        <div class="hero__valueTitle">{{ 'hero.valueTitle' | translate }}</div>
+        <p class="hero__valueText" style="white-space: pre-line;">{{ 'valueStatement' | translate }}</p>
+      </div>
+    </div>
+
+    <div class="hero__mediaWrap">
+      <div
+        class="hero__blueprint"
+        appDrawStroke
+        [useScrollTrigger]="false"
+        [drawDuration]="1.55"
+        [drawStagger]="0.05"
+        [drawFill]="false"
+        aria-hidden="true"
+      >
+        <svg class="blueprint" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.9">
+            <path d="M70 360 C140 300, 230 300, 300 350 C360 390, 460 410, 560 345 C640 300, 710 290, 742 312" stroke="currentColor" stroke-width="2" />
+            <path d="M90 392 C160 370, 240 372, 320 404 C420 442, 560 450, 720 402" stroke="currentColor" stroke-width="1.8" />
+            <path d="M132 292 C150 248, 180 220, 220 208" stroke="currentColor" stroke-width="1.6" />
+            <path d="M230 206 C265 200, 292 205, 314 222" stroke="currentColor" stroke-width="1.6" />
+            <path d="M606 246 C634 220, 662 214, 694 224" stroke="currentColor" stroke-width="1.6" />
+            <path d="M695 224 C728 238, 748 262, 760 292" stroke="currentColor" stroke-width="1.6" />
+            <path d="M118 434 L682 434" stroke="currentColor" stroke-width="1.2" opacity="0.65" />
+            <path d="M118 454 L682 454" stroke="currentColor" stroke-width="1.2" opacity="0.45" />
+            <path d="M118 474 L682 474" stroke="currentColor" stroke-width="1.2" opacity="0.3" />
+          </g>
+        </svg>
+      </div>
+
+      <div class="hero__media">
+        <div class="hero__slides" aria-hidden="true">
+          <img
+            class="hero__img hero__img--1"
+            src="assets/green/irrigation-sprinklers-lawn.png"
+            alt=""
+            loading="eager"
+            decoding="async"
+          />
+          <img
+            class="hero__img hero__img--2"
+            src="assets/green/land.png"
+            alt=""
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            class="hero__img hero__img--3"
+            src="assets/green/land2.png"
+            alt=""
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <div class="hero__overlay" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
